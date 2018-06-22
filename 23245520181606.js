@@ -2,7 +2,7 @@ var chat = new Chat({
 
         greeting: [
 		
-        'The fact is .. People does really look at photos and judge people.',
+        'The fact is .. People does really look at photos and judge people. :)',
          'So , <b><span "display:inline" id="displayname"></span></b>... Looking good in photos can be one of the best thing you will learn in life, we bet.' , 'Today we are going to study some of the best techniques based on which you can change and improve your selfie game.','Not just it will make you <b>look good</b>, it will also make you <b>feel good.</b>',
         
            
