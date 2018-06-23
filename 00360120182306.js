@@ -2,19 +2,13 @@ var chat = new Chat({
 
         greeting: [
 		
-      '<a onclick="bookpdf()" href="https://docs.google.com/gview?url=http://www.roblewis.com/wp-content/uploads/Think-And-Grow-Rich_2008-10.pdf" target="bookpdfframe">Hello</a> , <b><span "display:inline" id="displayname"></span></b>... Are you ready to read the book?' , 
+      '<a onclick="bookpdf()" href="https://docs.google.com/gview?url=http://www.roblewis.com/wp-content/uploads/Think-And-Grow-Rich_2008-10.pdf&embedded=true" target="bookpdfframe">Hello , <b><span "display:inline" id="displayname"></span></b>... Click here read the book.</a>' , 
         
            
           {
             type: 'choose',
             answers: [
 			
-		
-			{
-			  'text': 'Yes.',
-              'path': 'ready'
-			 
-            },
 			
 	
 			]
