@@ -12,7 +12,7 @@ var chat = new Chat({
 			
 		
 			{
-			  'text': 'I am ready.',
+			  'text': 'I am ready!',
               'path': 'ready'
 			 
             },
