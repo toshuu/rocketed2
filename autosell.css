@@ -1,22 +1,18 @@
-/* Change your background color */
-.background-color   {background-color:black}
+.background-color   {
+
+  
+  
+  
+  
+  
+  
+  background-color:black
 
 
-/* Change your text color */
-.background-color   {color:black}
 
 
-/* Change your cards background color */
-.background-card   {background-color:black}
 
 
-/* Change your cards text color */
-.background-card   {background-color:black}
 
 
-/* Change your logo image */
-.logo-z {background: url('  https://images.pexels.com/photos/990826/pexels-photo-990826.jpeg?auto=compress&cs=tinysrgb&h=350  ') }
-
-
-/* Change your header image */
-.background-card { background: url('  https://images.pexels.com/photos/990826/pexels-photo-990826.jpeg?auto=compress&cs=tinysrgb&h=350  ')}
+}
