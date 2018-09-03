@@ -1,4 +1,4 @@
-var uname= 'Tushar Thakare';
+var uname= 'Tushar Super';
 var ushop= 'Vio Smart Products';
 var uwano= '917218824193';
 var umail= 'liam.zinc@gmail.com';
