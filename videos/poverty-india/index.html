@@ -133,6 +133,9 @@ h1,h2,p{margin-top:0}h1{font-size:106px;line-height:.99;letter-spacing:-.055em;m
   enter("#s4 .kicker",15.2); enter("#s4 h2",15.4); enter("#s4 .sub",15.7); tl.from("#s4 .iconcard",{opacity:0,y:28,duration:.55,stagger:.12,ease:"power2.out"},16);
   enter("#s5 .kicker",20.2); enter("#s5 h2",20.4); enter("#s5 .sub",20.75); tl.from("#s5 .issue",{opacity:0,x:-35,duration:.5,stagger:.16,ease:"power2.out"},21.05);
   enter("#s6 .kicker",25.2); enter("#s6 h2",25.4); tl.from("#s6 .action",{opacity:0,y:22,duration:.45,stagger:.1,ease:"power2.out"},25.8); enter("#s6 > .layout > p:not(.kicker)",26.5); tl.from("#s6 .closing",{opacity:0,scale:.9,duration:.8,ease:"power2.out"},26.1);
+  // Keep the final scene on screen through the full 30-second runtime.
+  const remaining = Math.max(0, 30 - tl.duration());
+  if (remaining > 0) tl.to({}, {duration: remaining}, tl.duration());
   window.__timelines = window.__timelines || {};
   window.__timelines["poverty-india"] = tl;
 })();
