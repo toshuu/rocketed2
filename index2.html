@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rocketed — Concept Map</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#121a2d;--line:#344463;--text:#f4f7ff;--muted:#aab7d0;--blue:#79a7ff;--purple:#c2a0ff;--green:#7ee2bd;--gold:#ffd18a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#172544 0,#0b1020 58%);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;padding:clamp(18px,4vw,48px)}
+main{max-width:1120px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--blue);font-size:.75rem;font-weight:800}.intro{text-align:center;margin:0 auto 34px;max-width:720px}h1{font-size:clamp(2.3rem,6vw,4.3rem);line-height:1.05;letter-spacing:-.05em;margin:12px 0} .intro p{color:var(--muted);font-size:1.08rem;margin:14px auto 0}
+.diagram{display:grid;justify-items:center;gap:0}.node{width:min(100%,720px);border:1px solid var(--line);background:linear-gradient(135deg,#18243d,#111a2c);border-radius:18px;padding:20px 24px;text-align:center;box-shadow:0 14px 40px #0002}.node strong{display:block;font-size:1.08rem}.node p{margin:6px 0 0;color:var(--muted)}.core{border-color:#7199ff;background:linear-gradient(120deg,#1d3260,#222044);padding:25px}.core strong{font-size:1.45rem}.connector{height:35px;width:2px;background:var(--line);position:relative}.connector:after{content:"";position:absolute;bottom:-1px;left:-5px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--line)}
+.branch-label{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin:4px 0 12px}.branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;width:100%;position:relative}.branches:before{content:"";position:absolute;top:-15px;left:16.66%;right:16.66%;height:1px;background:var(--line)}.card{position:relative;border:1px solid var(--line);background:var(--panel);border-radius:15px;padding:19px 17px;min-height:150px}.card:before{content:"";position:absolute;top:-16px;left:50%;height:15px;width:1px;background:var(--line)}.icon{font-size:1.35rem;margin-bottom:8px}.card h2{font-size:1rem;margin:0 0 7px}.card p{color:var(--muted);font-size:.9rem;margin:0}.flow-title{margin:34px 0 12px;text-align:center;font-size:1.1rem}.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.step{border:1px solid var(--line);border-radius:13px;background:#10182a;padding:15px 12px;text-align:center;position:relative}.step:not(:last-child):after{content:"→";position:absolute;right:-12px;top:40%;color:var(--blue);font-weight:800;z-index:2}.num{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;margin:0 auto 9px;background:#25385f;color:#c9dcff;font-size:.8rem;font-weight:800}.step strong{display:block;font-size:.9rem}.step small{display:block;color:var(--muted);margin-top:5px;font-size:.78rem}.bottom{margin-top:28px;border:1px solid #4b4677;background:#191832;border-radius:16px;padding:20px;text-align:center}.bottom strong{color:var(--purple)}.bottom p{margin:5px 0 0;color:var(--muted)}footer{text-align:center;color:#71809c;font-size:.78rem;margin-top:24px}
+@media(max-width:720px){.branches{grid-template-columns:1fr;gap:12px}.branches:before,.card:before{display:none}.card{min-height:0}.flow{grid-template-columns:1fr;gap:9px}.step:not(:last-child):after{content:"↓";right:calc(50% - 4px);top:auto;bottom:-17px}.node{padding:18px}.intro{margin-bottom:26px}}
+</style>
+</head>
+<body>
+<main>
+<header class="intro">
+<div class="eyebrow">The concept · visual map</div>
+<h1>Rocketed</h1>
+<p>An interactive way to learn topics through guided stories, visuals, and choices—not just long blocks of text.</p>
+</header>
+
+<section class="diagram" aria-label="Rocketed concept diagram">
+<div class="node core"><strong>🎓 Rocketed · Interactive Learning</strong><p>A lesson becomes a guided experience that the learner explores at their own pace.</p></div>
+<div class="connector" aria-hidden="true"></div>
+<div class="branch-label">What makes the experience</div>
+<div class="branches">
+<article class="card"><div class="icon">💬</div><h2>Conversation-led</h2><p>Short prompts and clickable answers guide learners from one part of the lesson to the next.</p></article>
+<article class="card"><div class="icon">📖</div><h2>Story-based lessons</h2><p>Information is arranged as a beginning, chapters, and an ending to build a clear narrative.</p></article>
+<article class="card"><div class="icon">🖼️</div><h2>Visual storytelling</h2><p>Images, animated transitions, and slides make each step more engaging and easier to follow.</p></article>
+<article class="card"><div class="icon">🎯</div><h2>Interest selection</h2><p>Learners choose subjects such as technology, business, science, history, and art.</p></article>
+<article class="card"><div class="icon">🧭</div><h2>Guided progression</h2><p>Each answer can lead to a different next step, so the learner actively moves through the material.</p></article>
+<article class="card"><div class="icon">🧩</div><h2>Reusable lesson format</h2><p>The same interactive structure can present different topics and educational stories.</p></article>
+</div>
+</section>
+
+<h2 class="flow-title">How a learner uses it</h2>
+<section class="flow" aria-label="Learner journey">
+<div class="step"><span class="num">1</span><strong>Choose a topic</strong><small>Pick an area of interest</small></div>
+<div class="step"><span class="num">2</span><strong>Start a story</strong><small>Meet the subject and context</small></div>
+<div class="step"><span class="num">3</span><strong>Explore chapters</strong><small>Read, see, and discover</small></div>
+<div class="step"><span class="num">4</span><strong>Make choices</strong><small>Tap answers to continue</small></div>
+<div class="step"><span class="num">5</span><strong>Reach the takeaway</strong><small>Finish the guided lesson</small></div>
+</section>
+
+<div class="bottom"><strong>Core idea: learning by exploration</strong><p>Instead of only consuming information, the learner participates in a guided, visual journey.</p></div>
+<footer>Concept inferred from the existing Rocketed prototype files. This page explains the idea; it does not claim features that are not yet implemented.</footer>
+</main>
+</body>
+</html>
