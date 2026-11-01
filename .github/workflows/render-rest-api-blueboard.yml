@@ -7,7 +7,7 @@ on:
       - ".github/workflows/render-rest-api-blueboard.yml"
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   actions: read
 jobs:
   render:
@@ -35,10 +35,19 @@ jobs:
       - name: Render MP4
         working-directory: videos/rest-api-blueboard
         run: npx --yes hyperframes render --output rest-api-blueboard.mp4 --fps 30 --quality standard
-      - name: Upload finished video
+      - name: Upload finished video as workflow artifact
         uses: actions/upload-artifact@v4
         with:
           name: rest-api-blueboard-video
           path: videos/rest-api-blueboard/rest-api-blueboard.mp4
           if-no-files-found: error
           retention-days: 14
+      - name: Publish public download mirror
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: rest-api-blueboard-v1
+          name: REST API Blueboard Video
+          body: Public direct-download mirror for the REST API blueboard explainer.
+          files: videos/rest-api-blueboard/rest-api-blueboard.mp4
+          overwrite_files: true
+          make_latest: false
