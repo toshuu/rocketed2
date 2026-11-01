@@ -1,0 +1,53 @@
+name: Render REST API Blueprint video
+on:
+  push:
+    branches: [master]
+    paths:
+      - "videos/rest-api-blueprint/**"
+      - ".github/workflows/render-rest-api-blueprint.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: Verify render environment
+        run: |
+          node --version
+          ffmpeg -version
+          npx --yes hyperframes doctor
+      - name: Lint composition
+        working-directory: videos/rest-api-blueprint
+        run: npx --yes hyperframes lint
+      - name: Render MP4
+        working-directory: videos/rest-api-blueprint
+        run: npx --yes hyperframes render --output rest-api-blueprint.mp4 --fps 30 --quality standard
+      - name: Upload finished video as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rest-api-blueprint-video
+          path: videos/rest-api-blueprint/rest-api-blueprint.mp4
+          if-no-files-found: error
+          retention-days: 14
+      - name: Publish public download mirror
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: rest-api-blueprint-v1
+          name: REST API Blueprint Video
+          body: Public direct-download mirror for the REST API blueprint explainer.
+          files: videos/rest-api-blueprint/rest-api-blueprint.mp4
+          overwrite_files: true
+          make_latest: false
