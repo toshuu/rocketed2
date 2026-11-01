@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poverty in India — A 30-second explainer</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#080d18;color:#f5f4ee;font-family:Inter,Arial,Helvetica,sans-serif}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden;background:#080d18}
+.scene{position:absolute;inset:0;width:1920px;height:1080px;padding:92px 120px;background:radial-gradient(ellipse at 80% 15%,#172747 0%,#0b1322 42%,#080d18 78%);overflow:hidden}
+.scene:after{content:"";position:absolute;inset:30px;border:1px solid rgba(255,255,255,.07);pointer-events:none}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to right,transparent,black 25%,black 85%,transparent);opacity:.65}
+.kicker{font-size:23px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#f0b35c;margin:0 0 28px}
+h1,h2,p{margin-top:0}h1{font-size:106px;line-height:.99;letter-spacing:-.055em;max-width:1300px;margin-bottom:28px;font-weight:850}h2{font-size:72px;line-height:1.05;letter-spacing:-.045em;margin-bottom:22px;font-weight:820}.sub{font-size:31px;line-height:1.42;color:#b8c3d6;max-width:1050px}.accent{color:#f0b35c}.teal{color:#7de0c1}.muted{color:#9eacc2}.small{font-size:19px;color:#8998b1;line-height:1.4}.pill{display:inline-block;border:1px solid #42516b;background:#111d30;border-radius:999px;padding:12px 19px;color:#d6dfed;font-size:19px;letter-spacing:.04em}
+.orb{position:absolute;border-radius:50%;border:1px solid rgba(125,224,193,.22);width:650px;height:650px;right:115px;top:205px;box-shadow:0 0 0 55px rgba(125,224,193,.025),0 0 0 115px rgba(125,224,193,.018)}
+.india-mark{position:absolute;right:270px;top:260px;width:330px;height:470px;opacity:.8}
+.footer{position:absolute;bottom:61px;left:120px;right:120px;display:flex;justify-content:space-between;align-items:center;font-size:17px;color:#7e8ca5;letter-spacing:.09em;text-transform:uppercase}
+.page-no{color:#f0b35c;font-weight:800}
+.layout{position:relative;z-index:2}
+.metrics{display:flex;gap:28px;margin-top:54px}
+.metric{width:440px;padding:28px 30px;border:1px solid #35445e;border-radius:22px;background:rgba(15,27,46,.78)}
+.metric .number{font-size:82px;font-weight:850;letter-spacing:-.06em;line-height:1.05}
+.metric .label{font-size:23px;color:#c3cede;margin-top:10px}.metric .date{font-size:18px;color:#8998b1;margin-top:9px}
+.arrow{font-size:58px;color:#f0b35c;align-self:center}
+.barbox{margin-top:45px;width:900px}.barrow{display:grid;grid-template-columns:180px 1fr 100px;align-items:center;gap:20px;margin:25px 0;font-size:22px;color:#c3cede}.track{height:27px;background:#26334a;border-radius:6px;overflow:hidden}.bar{height:100%;border-radius:6px;background:linear-gradient(90deg,#f0b35c,#ffda9c)}.bar.tealbar{background:linear-gradient(90deg,#39b99b,#8af0d1)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.statbig{font-size:170px;line-height:.95;font-weight:900;letter-spacing:-.08em;color:#7de0c1}.statlabel{font-size:26px;color:#c5cfdf;max-width:430px;line-height:1.4;margin-top:24px}
+.iconrow{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:58px}.iconcard{min-height:245px;border:1px solid #34435c;background:rgba(15,27,46,.76);border-radius:22px;padding:27px}.symbol{font-size:42px;margin-bottom:25px;color:#f0b35c}.iconcard h3{font-size:27px;margin:0 0 12px}.iconcard p{font-size:20px;line-height:1.4;color:#aab7cb;margin:0}
+.issue-list{display:grid;gap:20px;margin-top:38px;max-width:1050px}.issue{display:flex;gap:24px;align-items:center;padding:22px 26px;border-left:4px solid #f0b35c;background:rgba(15,27,46,.76);border-radius:0 14px 14px 0;font-size:26px;color:#d7dfec}.issue span{font-size:30px}
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px;max-width:1120px}.action{border:1px solid #3b4c66;border-radius:16px;background:rgba(15,27,46,.8);padding:20px 24px;font-size:24px}.action b{color:#7de0c1;margin-right:12px}
+.closing{position:absolute;right:130px;top:250px;width:500px;height:500px;border:1px solid rgba(240,179,92,.3);border-radius:50%;display:grid;place-items:center}.closing:before,.closing:after{content:"";position:absolute;border:1px solid rgba(240,179,92,.16);border-radius:50%;inset:35px}.closing:after{inset:75px}.closing-inner{position:relative;z-index:2;text-align:center}.closing-inner .mark{font-size:90px;color:#f0b35c}.closing-inner p{font-size:22px;letter-spacing:.2em;text-transform:uppercase;color:#b8c3d6}
+.source{font-size:15px;color:#7f8da4;max-width:900px;line-height:1.35}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</head>
+<body>
+<div id="root" data-composition-id="poverty-india" data-start="0" data-width="1920" data-height="1080">
+<section id="s1" class="scene clip" data-start="0" data-duration="5" data-track-index="0">
+<div class="grid"></div><div class="orb"></div>
+<svg class="india-mark" viewBox="0 0 300 430" aria-hidden="true"><path d="M92 8 L134 25 153 57 188 71 177 105 205 130 187 158 207 193 182 220 171 259 145 292 136 330 113 372 92 342 82 303 59 276 67 243 42 215 57 184 35 158 48 127 37 101 61 79 67 46Z" fill="rgba(240,179,92,.08)" stroke="#f0b35c" stroke-width="2.5"/><path d="M67 125 L178 125 M53 184 L194 184 M68 243 L178 243 M82 303 L156 303" stroke="rgba(240,179,92,.3)" stroke-width="1.5"/></svg>
+<div class="layout">
+<p class="kicker">A nation in transition</p>
+<h1>POVERTY<br>IN <span class="accent">INDIA</span></h1>
+<p class="sub">Millions of lives have improved.<br><span style="color:#f5f4ee">The work is not finished.</span></p>
+<div style="margin-top:36px"><span class="pill">A 30-second explainer · 2026</span></div>
+</div>
+<div class="footer"><span>People • opportunity • dignity</span><span class="page-no">01 / 06</span></div>
+</section>
+
+<section id="s2" class="scene clip" data-start="5" data-duration="5" data-track-index="0">
+<div class="grid"></div><div class="layout">
+<p class="kicker">The long view · progress</p>
+<h2>Fewer people live<br>below the poverty line.</h2>
+<p class="sub">Using the World Bank's $4.20/day line<br>(2021 purchasing-power parity).</p>
+<div class="metrics">
+<div class="metric"><div class="number">57.7<span style="font-size:42px">%</span></div><div class="label">People living in poverty</div><div class="date">2011–12</div></div>
+<div class="arrow">→</div>
+<div class="metric" style="border-color:#3d8f80"><div class="number teal">16.1<span style="font-size:42px">%</span></div><div class="label">People living in poverty</div><div class="date">2023–24 · latest estimate</div></div>
+</div>
+</div>
+<div class="footer"><span>Lower poverty is real progress</span><span class="page-no">02 / 06</span></div>
+</section>
+
+<section id="s3" class="scene clip" data-start="10" data-duration="5" data-track-index="0">
+<div class="grid"></div><div class="layout split">
+<div>
+<p class="kicker">Extreme poverty · progress</p>
+<h2>A major decline.<br>A human challenge<br>that remains.</h2>
+<p class="sub">At the $3/day international extreme-poverty line, adjusted for purchasing power.</p>
+</div>
+<div>
+<div class="statbig">2.6<span style="font-size:78px">%</span></div>
+<div class="statlabel">of people were estimated to live in extreme poverty in 2023–24.</div>
+<div class="barbox">
+<div class="barrow"><span>2011–12</span><div class="track"><div class="bar" style="width:100%"></div></div><b>27.1%</b></div>
+<div class="barrow"><span>2023–24</span><div class="track"><div class="bar tealbar" style="width:9.6%"></div></div><b>2.6%</b></div>
+</div>
+</div>
+</div>
+<div class="footer"><span>National averages can hide local hardship</span><span class="page-no">03 / 06</span></div>
+</section>
+
+<section id="s4" class="scene clip" data-start="15" data-duration="5" data-track-index="0">
+<div class="grid"></div><div class="layout">
+<p class="kicker">Poverty is more than money</p>
+<h2>It shapes everyday life.</h2>
+<p class="sub">A household can face several barriers at once.</p>
+<div class="iconrow">
+<div class="iconcard"><div class="symbol">01 / ◇</div><h3>Food security</h3><p>Reliable access to enough safe, nutritious food.</p></div>
+<div class="iconcard"><div class="symbol">02 / ⌂</div><h3>Safe housing</h3><p>A secure home, clean water, sanitation and power.</p></div>
+<div class="iconcard"><div class="symbol">03 / +</div><h3>Health</h3><p>Care that people can reach and afford when needed.</p></div>
+<div class="iconcard"><div class="symbol">04 / ↗</div><h3>Education</h3><p>Learning and skills that open doors to opportunity.</p></div>
+</div>
+</div>
+<div class="footer"><span>Deprivation can overlap</span><span class="page-no">04 / 06</span></div>
+</section>
+
+<section id="s5" class="scene clip" data-start="20" data-duration="5" data-track-index="0">
+<div class="grid"></div><div class="layout">
+<p class="kicker">Why the challenge persists</p>
+<h2>Progress is not the same<br>as equal opportunity.</h2>
+<p class="sub">Where a person is born, the work they can find,<br>and the services they can access all matter.</p>
+<div class="issue-list">
+<div class="issue"><span>↗</span><div><b>Secure work</b> — stable jobs and fair pay help families withstand shocks.</div></div>
+<div class="issue"><span>⌁</span><div><b>Access to services</b> — schools, healthcare, transport and clean water must reach everyone.</div></div>
+<div class="issue"><span>◎</span><div><b>Local realities</b> — national progress can hide deep differences between communities.</div></div>
+</div>
+</div>
+<div class="footer"><span>Solutions must reach people where they are</span><span class="page-no">05 / 06</span></div>
+</section>
+
+<section id="s6" class="scene clip" data-start="25" data-duration="5" data-track-index="0">
+<div class="grid"></div><div class="layout">
+<p class="kicker">What moves progress forward</p>
+<h2>Turn progress into<br><span class="accent">lasting opportunity.</span></h2>
+<div class="action-grid">
+<div class="action"><b>01</b> Quality jobs and fair wages</div><div class="action"><b>02</b> Strong schools and skills</div>
+<div class="action"><b>03</b> Affordable healthcare</div><div class="action"><b>04</b> Reliable basic services</div>
+</div>
+<p style="font-size:32px;line-height:1.35;max-width:900px;margin-top:42px">The measure of progress is not only what a country produces—<span class="teal">it is how people live.</span></p>
+<div class="source">Data: World Bank, India Development Update, April 2026. Poverty estimates use international lines in 2021 PPP; figures are survey-based estimates, not live counts.</div>
+</div>
+<div class="closing"><div class="closing-inner"><div class="mark">₹</div><p>Dignity<br>Opportunity<br>For all</p></div></div>
+<div class="footer"><span>POVERTY IN INDIA · THE STORY CONTINUES</span><span class="page-no">06 / 06</span></div>
+</section>
+</div>
+<script>
+(() => {
+  const tl = gsap.timeline({paused:true});
+  const enter = (sel, at, distance=34) => tl.from(sel,{opacity:0,y:distance,duration:.65,ease:"power3.out",stagger:.12},at);
+  enter("#s1 .kicker",.25); enter("#s1 h1",.45,48); enter("#s1 .sub",.85); enter("#s1 .pill",1.25);
+  enter("#s2 .kicker",5.2); enter("#s2 h2",5.4); enter("#s2 .sub",5.75); enter("#s2 .metric",6.05); tl.from("#s2 .arrow",{opacity:0,x:-20,duration:.45},6.25);
+  enter("#s3 .kicker",10.2); enter("#s3 h2",10.4); enter("#s3 .sub",10.8); tl.from("#s3 .statbig",{opacity:0,scale:.8,duration:.7,ease:"back.out(1.5)"},10.45); enter("#s3 .statlabel",10.85); tl.from("#s3 .bar",{scaleX:0,transformOrigin:"left",duration:.8,stagger:.2,ease:"power2.out"},11.15);
+  enter("#s4 .kicker",15.2); enter("#s4 h2",15.4); enter("#s4 .sub",15.7); tl.from("#s4 .iconcard",{opacity:0,y:28,duration:.55,stagger:.12,ease:"power2.out"},16);
+  enter("#s5 .kicker",20.2); enter("#s5 h2",20.4); enter("#s5 .sub",20.75); tl.from("#s5 .issue",{opacity:0,x:-35,duration:.5,stagger:.16,ease:"power2.out"},21.05);
+  enter("#s6 .kicker",25.2); enter("#s6 h2",25.4); tl.from("#s6 .action",{opacity:0,y:22,duration:.45,stagger:.1,ease:"power2.out"},25.8); enter("#s6 > .layout > p:not(.kicker)",26.5); tl.from("#s6 .closing",{opacity:0,scale:.9,duration:.8,ease:"power2.out"},26.1);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["poverty-india"] = tl;
+})();
+</script>
+</body>
+</html>
