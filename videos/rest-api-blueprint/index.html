@@ -67,6 +67,27 @@ h1,h2{color:#f3f7fc;text-shadow:0 0 1px rgba(255,255,255,.3);font-family:"Trebuc
 /* technical title-block treatment */
 .scene .layout:after{content:"FIELD NOTES  /  REST API SYSTEMS";position:absolute;right:0;top:-35px;font:700 12px/1.2 Consolas,monospace;letter-spacing:.16em;color:rgba(231,240,249,.72)}
 
+
+/* FUN-ISOMETRIC REDRAFT: bold sticker fills, ink outlines, and extruded depth */
+.illustration{filter:drop-shadow(10px 12px 0 rgba(4,10,24,.58));}
+.sketch{fill:#f7f0df;stroke:#171923;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+.ink{fill:#171923}
+.pale{fill:#f7f0df;stroke:#171923;stroke-width:8;stroke-linejoin:round}
+.accent{fill:#ffb84d;stroke:#171923;stroke-width:8;stroke-linejoin:round}
+.success{fill:#80d6a7;stroke:#171923;stroke-width:8;stroke-linejoin:round}
+.warn{fill:#ff8d76;stroke:#171923;stroke-width:8;stroke-linejoin:round}
+.label,.smalllabel,.scribble{fill:#171923;paint-order:stroke;stroke:#f7f0df;stroke-width:2;stroke-linejoin:round}
+.label{font-weight:950}
+.panel,.card{background:#f7f0df;border:3px solid #171923;box-shadow:7px 8px 0 #080d1c;color:#171923}
+.card strong,.card span{color:#171923}
+.chip,.badge{background:#ffb84d;border:3px solid #171923;color:#171923;box-shadow:5px 6px 0 #080d1c}
+.code{background:#171923;border:3px solid #f7f0df;box-shadow:7px 8px 0 #080d1c}
+.step{color:#f7f0df}
+.num{background:#ffb84d;border:3px solid #171923;color:#171923}
+.callout{border-left:8px solid #ffb84d;background:#f7f0df;color:#171923;box-shadow:6px 7px 0 rgba(4,10,24,.4)}
+/* Sticker-like motion: pop in instead of a technical blueprint fade */
+.scene .illustration{transform-origin:50% 55%}
+
 </style>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 </head>
